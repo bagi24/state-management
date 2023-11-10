@@ -22,10 +22,10 @@ export function customerReducer(state = initialStateCustomer, action) {
   }
 }
 
-export function createCustomer(fullName, nationalID) {
+export function createCustomer(fullName, nationalID, createdAt) {
   return {
     type: "customer/createCustomer",
-    payload: { fullName, nationalID, createAt: new Date().toISOString() },
+    payload: { fullName, nationalID, createdAt: new Date().toISOString() },
   };
 }
 

@@ -1,7 +1,13 @@
 import "./style.scss";
 
+import Customer from "./features/customers/Customer";
+
 function App() {
-  return <div className="App">App</div>;
+  return (
+    <div className="App">
+      <Customer />
+    </div>
+  );
 }
 
 export default App;
